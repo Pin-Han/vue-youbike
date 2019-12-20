@@ -1,0 +1,12 @@
+.navbar {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+justify-content: center;
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        color: $color-gray-primary;
+    }
+}

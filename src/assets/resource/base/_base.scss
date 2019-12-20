@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+html {
+    //this defines what 1rem is 
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "cwTeXYen", sans-serif;
+}
+.laptop{
+    width: 960px;
+    margin: 0 auto;
+}

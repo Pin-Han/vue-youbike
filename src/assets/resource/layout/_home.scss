@@ -1,0 +1,11 @@
+.home{
+    display: flex;
+    @include respond(phone){
+            flex-direction: column;
+    }
+    &__right{
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+    }
+}

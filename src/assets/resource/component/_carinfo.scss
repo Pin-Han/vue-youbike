@@ -1,0 +1,173 @@
+.section-carinfo {
+    top: 70px;
+    background-color: $color-light-gray;
+    right: 30vw;
+    width: 25vw;
+    min-width: 300px;
+    height: calc(100vh - 70px);
+    @include respond(phone){
+        width: 100vw;
+        height: auto;
+    }
+}
+
+.carinfo {
+    padding: 20px 0;
+    // width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba($color: #777777, $alpha: 0.4);
+
+    &__search {
+
+        &-input {
+            outline: none;
+            height: 45px;
+            border: none;
+            font-size: 18px;
+            padding: 10px;
+            transition: all .2s;
+            border-radius: 3px 0 0 3px;
+            // box-shadow: 0 5px 5px rgba($color-black, $alpha: 0.2);
+
+            &:active,
+            &:focus {
+                border-bottom: 2px solid $color-scss-main;
+                padding-bottom: 8px;
+            }
+        }
+
+        &-search {
+            color: $color-gray-primary;
+            font-size: 25px;
+            padding: 10px;
+            transform: translateY(4px);
+            background-color: $color-white;
+            border-radius: 0 2px 2px 0;
+            cursor: pointer;
+            // box-shadow: 0 5px 5px rgba($color-black, $alpha: 0.2);
+
+        }
+    }
+
+    &__map {
+        margin-left: 10px;
+        font-size: 25px;
+        cursor: pointer;
+        color: $color-scss-main;
+
+        transition: all .2s;
+
+        &:hover {
+            transform: translateY(-3px);
+            transform: scale(1.1);
+        }
+
+        &:active,
+        &:focus {
+            transform: translateY(-1px);
+        }
+    }
+}
+
+.statinfo {
+    color: $color-gray-primary;
+    padding: 15px 25px 10px 25px;
+    ;
+    background-color: $color-white;
+    font-size: 20px;
+    height: auto;
+    display: flex;
+    background-image: linear-gradient(to right bottom,
+            rgba($color-white, 0.85),
+        ),
+        url('assets/image/bicycle.jpg');
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 5px 5px rgba($color-black, $alpha: 0.2);
+
+    &__name {
+        font-size: 25px;
+    }
+
+    &__num {
+        display: flex;
+        padding: 5px 0px;
+        flex-direction: row;
+
+        &-bike {
+            display: flex;
+        }
+
+        &-park {
+            margin-left: 10px;
+            display: flex;
+        }
+
+        &-icon {
+            margin: 0 5px;
+        }
+    }
+
+    &__script {}
+
+    &__distance {
+        padding: 5px 0;
+        display: flex;
+
+        &-icon {
+            margin: 0 5px;
+
+        }
+
+    }
+
+    &__time {
+        font-size: 18px;
+        // text-align: right;
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+text-align: right;
+    }
+
+    &__road {
+        display: flex;
+        // align-items: center;
+        transition: all .2s;
+        cursor: pointer;
+i{
+    transform: translateY(4px);
+}
+        &:hover {
+            color: $color-scss-main;
+        }
+    }
+}
+
+.direct {
+    // box-shadow: 0 5px 5px rgba($color-black, $alpha: 0.2);
+    border-bottom: 1px solid $color-black-light;
+    min-height: 50px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+    align-items: center;
+    padding-left: 15px;
+    font-weight: normal;
+
+    &__num {
+        margin-bottom: 0;
+    }
+
+    &__script {
+        margin: 0;
+        padding: 5px 10px;
+    }
+}
