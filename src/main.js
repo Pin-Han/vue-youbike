@@ -13,7 +13,7 @@ Vue.config.productionTip = false;
 Vue.component('Loading', Loading);
 Vue.use(Notification);
 Vue.use(VueAxios, axios);
-// Vue.use(VueGoogleMaps,{load:{key:'AIzaSyBYgc0F4T4Qr0d-Zq_ikJTvCGqlfYowky4',libraries:'places'}})
+
 
 new Vue({
   router,
